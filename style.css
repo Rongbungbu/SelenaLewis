@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --text-color-2: black;
+}
+
+body {
+  background-color: hsl(0, 0%, 81%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 90%;
+  margin: 40px 0;
+}
+
+.div-flex {
+  display: flex;
+  align-items: center;
+}
+
+.text-flex *{
+  margin: 0;
+}
+
+.card {
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  padding: 20px;
+  color: var(--text-color);
+}
+
+.card img {
+  border-radius: 100%;
+  height: 56px;
+  margin-right: 20px;
+}
+
+.cardDaniel {
+  background-color: hsl(263, 55%, 52%);
+}
+
+.cardJonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.cardJeanette {
+  background-color: hsl(0, 0%, 100%);
+  color: var(--text-color-2);
+}
+
+.cardPatrick {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.cardKira {
+  background-color: hsl(210, 46%, 95%);
+  color: var(--text-color-2);
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: hsl(0, 0%, 81%);
+    display: flex;
+    height: 99vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    width: 80%;
+  }
+
+  .div-flex {
+    display: flex;
+  }
+
+  .card {
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--text-color);
+  }
+
+  .card img {
+    border-radius: 100%;
+    margin-right: 20px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .card h5 {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .content {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "Daniel Daniel Jonathan Kira"
+      "Jeanette Patrick Patrick Kira";
+  }
+
+  .cardDaniel {
+    grid-area: Daniel;
+    background-color: hsl(263, 55%, 52%);
+  }
+
+  .cardJonathan {
+    grid-area: Jonathan;
+    background-color: hsl(217, 19%, 35%);
+  }
+
+  .cardJeanette {
+    grid-area: Jeanette;
+    background-color: hsl(0, 0%, 100%);
+    color: var(--text-color-2);
+  }
+
+  .cardPatrick {
+    grid-area: Patrick;
+    background-color: hsl(219, 29%, 14%);
+  }
+
+  .cardKira {
+    grid-area: Kira;
+    background-color: hsl(210, 46%, 95%);
+    color: var(--text-color-2);
+  }
+}
